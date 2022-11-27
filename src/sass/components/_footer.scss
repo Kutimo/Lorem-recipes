@@ -1,0 +1,44 @@
+@use "../base/colors" as c;
+
+footer {
+  background-color: c.$light_main_color;
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  p {
+    color: c.$light_color;
+  }
+}
+.footer_ul {
+  display: flex;
+  list-style: none;
+  .footer_link {
+    color: c.$light_color;
+    text-decoration: none;
+    padding: 0.8rem;
+    &:hover {
+      color: c.$main_color;
+    }
+    &:active {
+      color: c.$tertiary_color;
+    }
+  }
+}
+
+.source {
+  color: c.$light_color;
+  text-decoration: none;
+  padding: 0.8rem;
+  &:hover {
+    color: c.$main_color;
+  }
+  &:active {
+    color: c.$tertiary_color;
+  }
+}
+.footer_logo {
+  cite {
+    color: c.$light_color;
+  }
+}

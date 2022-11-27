@@ -1,0 +1,15 @@
+@use "../base/colors" as c;
+.input1 {
+  transition: width 0.4s ease-in-out;
+  width: 40%;
+  color: c.$main_color;
+  outline: none;
+  padding: 0.5rem;
+  text-align: center;
+
+  &:focus {
+    width: 60%;
+    border: c.$light_color;
+    border: 2px solid c.$secondary_color;
+  }
+}

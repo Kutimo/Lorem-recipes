@@ -1,0 +1,11 @@
+@use "../base/colors" as c;
+
+.a_hvr1 {
+  color: c.$main_color;
+  &:hover {
+    color: c.$light_color;
+  }
+  &:active {
+    color: c.$tertiary_color;
+  }
+}

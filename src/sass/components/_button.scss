@@ -1,0 +1,14 @@
+@use "../base/colors" as c;
+.btn1 {
+    color: c.$light_color;
+    background-color: c.$main_color;
+    padding: 0.5rem;
+    text-decoration: none;
+    border: none;
+    &:hover {
+        box-shadow: 3px 3px 0px c.$light_color;
+    }
+    &:active {
+        transform: scale(110%);
+    }
+}

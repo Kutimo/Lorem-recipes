@@ -1,0 +1,24 @@
+@use "./colors" as c;
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: poppins, "sans-serif";
+  color: c.$light_color;
+  line-height: calc(1ex / 0.32);
+}
+h2 {
+  font-size: 1.6rem;
+  font-family: poppins, "sans-serif";
+  line-height: calc(1ex / 0.32);
+}
+h3 {
+  font-size: 1.4rem;
+  font-family: poppins, "sans-serif";
+  line-height: calc(1ex / 0.32);
+}
+p,
+li {
+  font-family: poppins, "sans-serif";
+  font-size: 1.2rem;
+  line-height: calc(1ex / 0.32);
+}

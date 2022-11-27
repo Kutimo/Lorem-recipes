@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/dist/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adobo recipe || Lorem recipes</title>
+  </head>
+  <body>
+    <header>
+      <a href="./pseudo.html">
+        <img src="/images/logo.svg" alt="Logo" id="logo" />
+      </a>
+
+      <a href="/src/pseudo.html"><h1>Lorem recipes</h1> </a>
+      <nav>
+        <ul class="nav_ul">
+          <li><a class="nav_links" href="/src/pseudo.html">home</a></li>
+          <li><a class="nav_links" href="#">more recipes</a></li>
+          <li><a class="nav_links" href="#">about</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="content_left">
+        <h2>Super tender chicken adobo</h2>
+
+        <p>
+          <em>
+            Chicken adobo is a lovely weekday dish that originated in the Philippines. The secret behind the juicy
+            chicken and caramelized crust is something that you already have in your pantry.
+          </em>
+        </p>
+
+        <p>
+          Adobo is either made with pork or chicken, sometimes a combination of both. «Adobo» originates from the
+          spanish verb "adobar", which means to marinate. and it is exactly the marinade that is the most important part
+          of the process.
+        </p>
+
+        <p>
+          It is one particular ingredient that makes the chicken juicy and tender: Vinegar. The marinade for chicken
+          adobo, which is also one of the national dishes of the Philippines, consists of garlic, soy sauce and of
+          course vinegar!
+        </p>
+
+        <h2>The techniques that makes the chicken juicy</h2>
+
+        <p>chicken Adobo is a dish that combines many different techniques.</p>
+
+        <p>
+          First the chicken needs to marinate over night in the vinegar marinade. The day after you boil the chicken in
+          the same marinade. then the chicken is stir fried until a nice caramelized crust has been created.
+        </p>
+
+        <p>
+          This filipino techniques is completely backwards from how many normally cooks chicken. normally you would stir
+          fry the chicken first, then possibly boil it.
+        </p>
+
+        <p>
+          The result is really worth the work, you get an incredibly juicy chicken with a really crispy and lovely skin!
+        </p>
+
+        <h3>This is what you do:</h3>
+
+        <div class="checkboxes">
+          <div class="checkbox">
+            <input type="checkbox" id="step1" />
+            <label for="step1">
+              1. The day before: blend soy sauce, fried garlic, pepper, vinegar, bay leaves and tomatoes in a bowl. cut
+              the chicken thighs in pieces and let the marinate in the vinegar marinade.
+            </label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="step2" />
+            <label for="step2">
+              2. The day after: find a pot and boil the chicken in the marinade for about 25 min on medium heat. remove
+              the fat and impurities that float to the top.
+            </label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="step3" />
+            <label for="step3">
+              3. Take out the chicken and place them on a tray. strain the marinade and reduce it in a pan by half.
+            </label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="step4" />
+            <label for="step4">
+              4. Heat a pan with some good olive oil and fired the chicken pieces skin side down. keep turning the
+              pieces until all the sides are golden.
+            </label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="step5" />
+            <label for="step5">5. Add the onion and cook it until it is nice and soft. </label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="step6" />
+            <label for="step6">
+              6. Take out the chicken and onion and add 1/2 dl of water to the pan to deglaze the pan. then add it to
+              the sauce.
+            </label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="step7" />
+            <label for="step7">
+              7. Add the chicken and onion to a serving tray and pour the sauce over. finally sprinkle some spring
+              onions over the dish.
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="content_right">
+        <!-- dynamic update of elements with js according to the serving size -->
+
+        <div class="carousel" id="carousel_about">
+          <button class="carousel__button carousel__button--left hidden">
+            <img src="/images/arrowLeft.svg" alt="Arrow left" />
+          </button>
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide">
+                <img class="carousel__image" src="/images/chicken-adobo_1.webp" alt="Chicken adobo" />
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="/images/chicken-adobo__1.avif" alt="Chicken adobo" />
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="/images/chicken-adobo__2.avif" alt="Chicken adobo" />
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="/images/chicken-adobo__3.avif" alt="Chicken adobo" />
+              </li>
+            </ul>
+          </div>
+          <button class="carousel__button carousel__button--right">
+            <img src="/images/arrowRight.svg" alt="Arrow right  " />
+          </button>
+          <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+          </div>
+        </div>
+        <div class="portions_calc_container">
+          <h3>Ingredients:</h3>
+          <div class="portions_calc">
+            <button id="minusButton" onClick="decrement()" class="portions_btn">-</button>
+            <input type="number" value="4" id="portions" min="1" max="15" onkeyup="imposeMinMax(this)" />
+            <button id="plusButton" onClick="increment()" class="portions_btn">+</button>
+          </div>
+          <h3>Portions:</h3>
+        </div>
+        <div class="portions_ingredients">
+          <ul>
+            <li><span id="soy">5</span>dl soy sauce</li>
+            <li><span id="garlic">8</span> cloves of garlic, coarsely chopped, pan fried</li>
+            <li>Black pepper to taste</li>
+            <li><span id="vinegar">2,5</span>dl white wine vinegar</li>
+            <li><span id="bayLeaf">2</span> Bay leaf, crushed</li>
+            <li><span id="tomato">1</span> can(s) of chopped tomatoes</li>
+            <li><span id="chicken">4</span> large chicken thighs</li>
+            <li>Olive oil</li>
+            <li><span id="onion">2</span> Onion, thinly sliced</li>
+            <li><span id="sOnion">2</span> Spring onion, thinly sliced</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Recipe source:
+        <a class="source" href="https://coop.no/mega/oppskrifter/kylling/kylling-adobo/">Adobo recipe from Coop.</a>
+      </p>
+      <div class="footer_logo">
+        <a href="./pseudo.html">
+          <img src="/images/logo.svg" alt="Logo" id="logo" />
+        </a>
+        <cite>© none rights reserved </cite>
+      </div>
+
+      <div class="footer_links">
+        <ul class="footer_ul">
+          <li><a class="footer_link" href="/src/pseudo.html">home</a></li>
+          <li><a class="footer_link" href="#">more recipes</a></li>
+          <li><a class="footer_link" href="#">about</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- TODO: find a sleek way to add source -->
+
+    <!-- TODO: Add cards with other dishes underneath here -->
+    <script src="/src/js/portions_calculator.js"></script>
+    <script src="/src/js/carousel.js"></script>
+  </body>
+</html>

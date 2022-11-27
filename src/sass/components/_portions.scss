@@ -1,0 +1,65 @@
+@use "../base/colors" as c;
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.portions_calc_container {
+  height: 6rem;
+  width: 9rem;
+  padding: 0.4rem;
+  margin-top: 1.8rem;
+
+  text-align: center;
+
+  .portions_calc {
+    background-color: c.$light_main_color;
+    border-radius: 5rem;
+    padding: 0.2rem;
+  }
+}
+
+input[type="number"] {
+  resize: none;
+  padding: 0.2rem;
+  text-align: center;
+  width: 3rem;
+  height: 2rem;
+  border: none;
+  border-radius: 1rem;
+  &:focus {
+    outline: none;
+  }
+}
+
+.portions_btn {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  color: c.$light_color;
+  background-color: c.$main_color;
+
+  &:hover {
+    box-shadow: 1px 1px 1.4px 0px c.$light_color;
+    transform: scale(110%);
+    transition: ease-in-out 0.2;
+  }
+  &:active {
+    transform: scale(100%);
+    transition: ease-in-out 0.2;
+  }
+}
+.portions_ingredients {
+  li {
+    list-style: none;
+
+    &::before {
+      content: "❖ ";
+    }
+  }
+}

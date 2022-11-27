@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/dist/index.css" />
+        <title>Pseudo Classes</title>
+    </head>
+    <body>
+        <h1>Pseudo classes</h1>
+        <div class="cards">
+            <div class="card">
+                <p>
+                    Pseudo class selectors are css selectors with a colon in front. It is combined with a css selector
+                    to add a effect to exciting elements.
+                </p>
+                <br />
+                <p>
+                    For example: Change the style of an element to show the link i visited or not, and also when the
+                    user is hovering the element or if the element is in focus.
+                </p>
+            </div>
+            <div class="card">
+                <h2>Change the style of a link depending on the state.</h2>
+
+                <p>
+                    <a class="a_hvr1" href="https://gokstadakademiet.no/" target="_blank"
+                        >This is a link to Gokstad Akademiet</a
+                    >
+                </p>
+
+                <p>
+                    <b>Note:</b>
+                    a:hover Must be after a:link and a:visited in the css style to be effective
+                </p>
+                <br />
+                <p><b>Note:</b> a:active Must be after a:hover in the css style to be effective.</p>
+            </div>
+            <div class="card">
+                <h2>Pseudo - :hover og :active</h2>
+
+                <button class="btn1">Hover the cursor here</button>
+            </div>
+            <div class="card">
+                <h2>Pseudo class - focus</h2>
+
+                <input type="text" class="input1" placeholder="Change the border" />
+            </div>
+            <div class="card">
+                <h2>Pseudo - :first-child & :last-child</h2>
+
+                <div class="child_container">
+                    <h3>This is the first nested child (First child) element.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sed officia pariatur</p>
+                    <br />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. fugiat reprehenderit dolores aliquam,
+                        aperiam delectus voluptatibus laudantium quisquam. Eveniet quia fugiat ad, illum magni hic eos
+                        nobis.
+                    </p>
+                    <p>This is the last nested (last-child) element.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Pseudo element - ::before and ::after</h2>
+
+                <p class="en">Add content before the element</p>
+
+                <p class="to">Add content after the element</p>
+            </div>
+            <div class="card">
+                <h2>Pseudo element - ::first-letter og ::first-line</h2>
+
+                <div class="first-container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit Exercitationem sed officia pariatur
+                        fugiat reprehenderit dolores aliquam, aperiam delectus voluptatibus laudantium quisquam. Eveniet
+                        quia fugiat ad, illum magni hic eos nobis.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <button class="btn1" type="button" onClick="location.href='adobo.html';">
+                    Example with Pseudo classes
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

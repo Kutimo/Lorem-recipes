@@ -1,0 +1,62 @@
+@use "../base/colors" as *;
+body {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0.5rem;
+  #logo {
+    height: 3rem;
+    &:hover {
+      transform: scale(115%);
+      transition: ease-in-out 0.3s;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .nav_ul {
+    display: flex;
+    list-style: none;
+    .nav_links {
+      color: $light_color;
+      text-decoration: none;
+      padding: 0.8rem;
+      &:hover {
+        color: $main_color;
+      }
+      &:active {
+        color: $tertiary_color;
+      }
+    }
+  }
+}
+main {
+  margin-top: 1.4rem;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.content_right {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $light_color;
+  width: 32rem;
+  height: 55rem;
+}
+.content_left {
+  background: $light_color;
+  width: 55rem;
+  padding: 1rem;
+  h2,
+  h3 {
+    padding: 5px;
+  }
+}

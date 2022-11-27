@@ -1,0 +1,48 @@
+@use "../base/colors" as c;
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+label {
+  font-size: 1.1rem;
+  &::first-letter {
+    font-weight: bold;
+  }
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: c.$main_color;
+  width: 1.35em;
+  height: 1.35em;
+  margin: 0.7rem;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+
+  &::before {
+    content: "";
+    width: 0.85em;
+    height: 0.85em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 130ms transform ease-in-out;
+    box-shadow: inset 1em 1em c.$main_color;
+  }
+
+  &:checked::before {
+    transform: scale(1);
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &:checked + label {
+    text-decoration: line-through;
+  }
+}

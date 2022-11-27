@@ -1,0 +1,525 @@
+@charset "UTF-8";
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: poppins, "sans-serif";
+  color: rgb(255, 255, 255);
+  line-height: 3.125ex;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-family: poppins, "sans-serif";
+  line-height: 3.125ex;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-family: poppins, "sans-serif";
+  line-height: 3.125ex;
+}
+
+p,
+li {
+  font-family: poppins, "sans-serif";
+  font-size: 1.2rem;
+  line-height: 3.125ex;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+label {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+label:focus {
+  outline: none !important;
+}
+
+.a_hvr1 {
+  color: rgb(44, 44, 44);
+}
+.a_hvr1:hover {
+  color: rgb(255, 255, 255);
+}
+.a_hvr1:active {
+  color: rgb(32, 32, 232);
+}
+
+.btn1 {
+  color: rgb(255, 255, 255);
+  background-color: rgb(44, 44, 44);
+  padding: 0.5rem;
+  text-decoration: none;
+  border: none;
+}
+.btn1:hover {
+  box-shadow: 3px 3px 0px rgb(255, 255, 255);
+}
+.btn1:active {
+  transform: scale(110%);
+}
+
+.input1 {
+  transition: width 0.4s ease-in-out;
+  width: 40%;
+  color: rgb(44, 44, 44);
+  outline: none;
+  padding: 0.5rem;
+  text-align: center;
+}
+.input1:focus {
+  width: 60%;
+  border: rgb(255, 255, 255);
+  border: 2px solid rgb(15, 15, 15);
+}
+
+.carousel {
+  position: relative;
+  height: 25rem;
+  width: 30rem;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgb(88, 88, 88);
+  border-radius: 1.5rem;
+}
+
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__track-container {
+  position: relative;
+  height: 100%;
+  background: rgb(44, 44, 44);
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.carousel__track {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: transform ease-in 250ms;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(218deg) brightness(103%) contrast(107%);
+  border: 1.2px solid;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 4;
+}
+.carousel__button img {
+  width: 30px;
+  height: 30px;
+}
+
+.carousel__button--left {
+  left: 5px;
+}
+
+.carousel__button--right {
+  right: 5px;
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hidden {
+  display: none;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.portions_calc_container {
+  height: 6rem;
+  width: 9rem;
+  padding: 0.4rem;
+  margin-top: 1.8rem;
+  text-align: center;
+}
+.portions_calc_container .portions_calc {
+  background-color: rgb(88, 88, 88);
+  border-radius: 5rem;
+  padding: 0.2rem;
+}
+
+input[type=number] {
+  resize: none;
+  padding: 0.2rem;
+  text-align: center;
+  width: 3rem;
+  height: 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+input[type=number]:focus {
+  outline: none;
+}
+
+.portions_btn {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(44, 44, 44);
+}
+.portions_btn:hover {
+  box-shadow: 1px 1px 1.4px 0px rgb(255, 255, 255);
+  transform: scale(110%);
+  transition: ease-in-out 0.2;
+}
+.portions_btn:active {
+  transform: scale(100%);
+  transition: ease-in-out 0.2;
+}
+
+.portions_ingredients li {
+  list-style: none;
+}
+.portions_ingredients li::before {
+  content: "❖ ";
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+label {
+  font-size: 1.1rem;
+}
+label::first-letter {
+  font-weight: bold;
+}
+
+input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: rgb(44, 44, 44);
+  width: 1.35em;
+  height: 1.35em;
+  margin: 0.7rem;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox]::before {
+  content: "";
+  width: 0.85em;
+  height: 0.85em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 130ms transform ease-in-out;
+  box-shadow: inset 1em 1em rgb(44, 44, 44);
+}
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+input[type=checkbox]:hover {
+  cursor: pointer;
+}
+input[type=checkbox]:checked + label {
+  text-decoration: line-through;
+}
+
+footer {
+  background-color: rgb(88, 88, 88);
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer p {
+  color: rgb(255, 255, 255);
+}
+
+.footer_ul {
+  display: flex;
+  list-style: none;
+}
+.footer_ul .footer_link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0.8rem;
+}
+.footer_ul .footer_link:hover {
+  color: rgb(44, 44, 44);
+}
+.footer_ul .footer_link:active {
+  color: rgb(32, 32, 232);
+}
+
+.source {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0.8rem;
+}
+.source:hover {
+  color: rgb(44, 44, 44);
+}
+.source:active {
+  color: rgb(32, 32, 232);
+}
+
+.footer_logo cite {
+  color: rgb(255, 255, 255);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  width: 300px;
+  width: 50ch;
+  padding: 0.5rem;
+  border: 2px solid rgb(255, 255, 255);
+}
+.card h2 {
+  color: rgb(44, 44, 44);
+}
+.card h3 {
+  color: rgb(44, 44, 44);
+}
+.card p {
+  color: rgb(44, 44, 44);
+}
+.card .child_container :first-child {
+  color: rgb(255, 255, 255);
+}
+.card .child_container p:last-child {
+  color: rgb(255, 255, 255);
+}
+
+.en::before {
+  content: "❈";
+}
+
+.to::after {
+  content: "❈";
+}
+
+.first-container::first-line {
+  color: rgb(255, 255, 255);
+}
+.first-container::first-letter {
+  font-size: 2rem;
+  color: rgb(44, 44, 44);
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0.5rem;
+}
+header #logo {
+  height: 3rem;
+}
+header #logo:hover {
+  transform: scale(115%);
+  transition: ease-in-out 0.3s;
+}
+header a {
+  text-decoration: none;
+}
+header .nav_ul {
+  display: flex;
+  list-style: none;
+}
+header .nav_ul .nav_links {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0.8rem;
+}
+header .nav_ul .nav_links:hover {
+  color: rgb(44, 44, 44);
+}
+header .nav_ul .nav_links:active {
+  color: rgb(32, 32, 232);
+}
+
+main {
+  margin-top: 1.4rem;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content_right {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  width: 32rem;
+  height: 55rem;
+}
+
+.content_left {
+  background: rgb(255, 255, 255);
+  width: 55rem;
+  padding: 1rem;
+}
+.content_left h2,
+.content_left h3 {
+  padding: 5px;
+}
+
+body {
+  background-image: url("/images/background.svg");
+}
+
+/*# sourceMappingURL=index.css.map */

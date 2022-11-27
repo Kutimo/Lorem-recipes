@@ -1,0 +1,68 @@
+@use "../base/colors" as c;
+
+body {
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    height: 100%;
+    width: 100%;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    width: 50ch;
+    padding: 0.5rem;
+    border: 2px solid c.$light_color;
+
+    h2 {
+        color: c.$main_color;
+    }
+
+    h3 {
+        color: c.$main_color;
+    }
+    p {
+        color: c.$main_color;
+    }
+
+    .child_container {
+        :first-child {
+            color: c.$light_color;
+        }
+        p:last-child {
+            color: c.$light_color;
+        }
+    }
+}
+
+.en::before {
+    content: "❈";
+}
+
+.to::after {
+    content: "❈";
+}
+
+.first-container {
+    &::first-line {
+        color: c.$light_color;
+    }
+    &::first-letter {
+        font-size: 2rem;
+        color: c.$main_color;
+    }
+}
