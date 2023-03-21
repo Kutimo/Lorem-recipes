@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Kutimo/Lorem-recipes">
-    <img src="./logo.png" alt="Logo" width="80" height="80">
+    <img src="./logo.png" alt="Logo" width="80" height="auto">
   </a>
 <h3 align="center">Lorem recepies</h3>
 </div>
