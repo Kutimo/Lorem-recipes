@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/kutimo/Arbeidskrav-1-JS-API">
+  <a href="https://github.com/Kutimo/Lorem-recipes">
     <img src="./logo.svg" alt="Logo" width="80" height="80">
   </a>
 <h3 align="center">Lorem recepies</h3>
@@ -12,7 +12,7 @@
 
 ## Brief Overview
 
-<img src="./screenShot.png" alt="project image" width="auto" height="550">
+<img src="./screenshot.png" alt="project image" width="auto" height="550">
 
 <p>This project is a school task that focuses on the use of pseudo classes in web development. For the project i have taken it upon myself to challenge my skills by incorporating additional elements such as Javascript and Sass.
 
