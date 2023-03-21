@@ -21,17 +21,14 @@ As part of the project, i have  designed a portion calculator for a recipe with 
 Additionally, the project includes an image carousel, which required a significant amount of Javascript coding to get the slides working and the navigation updated.
 <br>
 The project consists of two main pages: "pseudo.html" and "adobo.html". The first page is a small overview of a few pseudo classes, while the second page showcases the use of almost all of them.</p>
-  <hr>
+ <p>Hosted live here:<a href="https://lorem.recepies.kutimo.dev">kutimo.dev</a> </p>
+ <hr>
 
 ### Built with
 
 - [![JavaScript][javascript-shield]][js-url]
 - [![HTML][html-shield]][html-url]
 - [![SASS][sass-shield]][sass-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<hr>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>  
 <hr>
